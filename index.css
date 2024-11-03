@@ -1,0 +1,69 @@
+body {
+    zoom: 1.25;
+}
+
+#calculator
+{
+    padding: 20px;
+    border: solid 2px CornflowerBlue;
+    width: fit-content;
+}
+
+#display
+{
+    border: solid 1px black;
+    padding: 5px;
+    max-width : 150px;
+    min-width: 180px;
+    height: 20px;
+    align-self: center;
+    align-items: right;
+    text-align: right;
+    overflow: auto;    
+}
+
+#previous
+{
+    color:gray;
+    display: inline-block;
+}
+
+#actual
+{
+    display: inline-block;
+}
+
+#buttons_container
+{
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+button
+{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
+}
+
+#zero_button
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    button {
+        width: 70px;
+    }
+}
+
+#equal_button
+{
+    grid-column: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    button {
+        height: 70px;
+    }
+}
